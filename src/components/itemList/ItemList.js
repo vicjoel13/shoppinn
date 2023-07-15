@@ -7,7 +7,7 @@ function ItemList({ items }) {
   return (
     <div className="item-list">
       {items.map((item) => (
-        <Link to={`/item/${item.id}`} key={item.id}>
+        <Link to={`/item/${item.id}`} key={item.id} id={item.id}>
           <Item
             name={item.name}
             rating={item.rating}
